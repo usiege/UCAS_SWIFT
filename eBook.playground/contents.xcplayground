@@ -5,5 +5,7 @@
         <page name='命名空间'/>
         <page name='typealias'/>
         <page name='associatedtype'/>
+        <page name='可变参数函数'/>
+        <page name='初始化方法顺序'/>
     </pages>
 </playground>
