@@ -7,5 +7,9 @@
         <page name='associatedtype'/>
         <page name='可变参数函数'/>
         <page name='初始化方法顺序'/>
+        <page name='略过'/>
+        <page name='模式匹配'/>
+        <page name='Mirror'/>
+        <page name='where'/>
     </pages>
 </playground>

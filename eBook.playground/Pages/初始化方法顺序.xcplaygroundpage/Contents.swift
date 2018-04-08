@@ -57,9 +57,23 @@ class ClassB: ClassA {
         super.init(num: num)
         fatalError("init(num:) has not been implemented")
     }
+    
+    init?(nilParam: String) {
+        return nil
+    }
 }
 
-                                                                                                                                                                                                                                                                                                                                                                        
+class ClassStatic {
+    class func foo() {
+        
+    }
+    
+    static func boo() {
+//        NSLocalizedString(<#T##key: String##String#>, comment: <#T##String#>)
+    }
+}
+
+
 
 
 
