@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0FA2F4207B69A600C268C0 /* FillingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0FA2F3207B69A600C268C0 /* FillingView.swift */; };
 		CE3B74EE1F43E7260004E1F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B74ED1F43E7260004E1F3 /* AppDelegate.swift */; };
 		CE3B74F01F43E7260004E1F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B74EF1F43E7260004E1F3 /* ViewController.swift */; };
 		CE3B74F31F43E7260004E1F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3B74F11F43E7260004E1F3 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE0FA2F3207B69A600C268C0 /* FillingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FillingView.swift; sourceTree = "<group>"; };
 		CE3B74EA1F43E7260004E1F3 /* DH_Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DH_Library.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3B74ED1F43E7260004E1F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE3B74EF1F43E7260004E1F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE0FA2F2207B699700C268C0 /* 02 */ = {
+			isa = PBXGroup;
+			children = (
+				CE0FA2F3207B69A600C268C0 /* FillingView.swift */,
+			);
+			path = 02;
+			sourceTree = "<group>";
+		};
 		CE3B74E11F43E7260004E1F3 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +95,7 @@
 				CE3B74EF1F43E7260004E1F3 /* ViewController.swift */,
 				CE3B751B1F55719C0004E1F3 /* AVViewController.swift */,
 				CE3B750D1F43F4BC0004E1F3 /* Singleton.swift */,
+				CE0FA2F2207B699700C268C0 /* 02 */,
 				CE3B74F11F43E7260004E1F3 /* Main.storyboard */,
 				CE3B74F41F43E7260004E1F3 /* Assets.xcassets */,
 				CE3B74F61F43E7260004E1F3 /* LaunchScreen.storyboard */,
@@ -152,7 +163,7 @@
 				TargetAttributes = {
 					CE3B74E91F43E7260004E1F3 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 5PE3PM2R7K;
+						DevelopmentTeam = 472P9J8R6U;
 						ProvisioningStyle = Automatic;
 					};
 					CE3B74FD1F43E7260004E1F3 = {
@@ -208,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE3B74F01F43E7260004E1F3 /* ViewController.swift in Sources */,
+				CE0FA2F4207B69A600C268C0 /* FillingView.swift in Sources */,
 				CE3B750E1F43F4BC0004E1F3 /* Singleton.swift in Sources */,
 				CE3B74EE1F43E7260004E1F3 /* AppDelegate.swift in Sources */,
 				CE3B751C1F55719C0004E1F3 /* AVViewController.swift in Sources */,
@@ -351,12 +363,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5PE3PM2R7K;
+				DEVELOPMENT_TEAM = 472P9J8R6U;
 				INFOPLIST_FILE = DH_Library/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lzh.DH-Library";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -364,12 +376,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5PE3PM2R7K;
+				DEVELOPMENT_TEAM = 472P9J8R6U;
 				INFOPLIST_FILE = DH_Library/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lzh.DH-Library";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
