@@ -13,9 +13,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        
-        
+        self.navigationController?.navigationBar.isHidden = true
+        let view = FillingView.init(frame: UIScreen.main.bounds)
+        self.view.addSubview(view)
         
     }
     
