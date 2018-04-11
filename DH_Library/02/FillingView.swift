@@ -39,7 +39,7 @@ class FillingView: UIView {
         image?.draw(in: CGRect(x: 150, y: 30, width: 100, height: 100))
         
         //在view上写字
-        let title: NSString = "薛定鄂的狗"
+        let title: NSString = "薛定谔的狗"
         let attr = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 24)]
         title.draw(at: CGPoint(x: 150, y: 150), withAttributes: attr)
         
@@ -93,7 +93,7 @@ class FillingView: UIView {
          同样是draw函数 context uiimage cgimage画的坐标系不一样；
          
          affine 仿射变换，如下；
-         */ 
+         */
     
         context?.saveGState()
         var myaffine = CGAffineTransform(translationX: 0, y: catimage!.size.height)

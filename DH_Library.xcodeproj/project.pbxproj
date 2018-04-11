@@ -19,6 +19,7 @@
 		CEF1069B207CA16500C42412 /* rabbit.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF10698207CA16400C42412 /* rabbit.png */; };
 		CEF1069C207CA16500C42412 /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF10699207CA16500C42412 /* dog.png */; };
 		CEF1069D207CA16500C42412 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF1069A207CA16500C42412 /* cat.png */; };
+		CEF106A0207E0FF800C42412 /* CIingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1069F207E0FF800C42412 /* CIingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		CEF10698207CA16400C42412 /* rabbit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rabbit.png; sourceTree = "<group>"; };
 		CEF10699207CA16500C42412 /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog.png; sourceTree = "<group>"; };
 		CEF1069A207CA16500C42412 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
+		CEF1069F207E0FF800C42412 /* CIingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				CE3B74EF1F43E7260004E1F3 /* ViewController.swift */,
 				CE3B751B1F55719C0004E1F3 /* AVViewController.swift */,
 				CE3B750D1F43F4BC0004E1F3 /* Singleton.swift */,
+				CEF1069E207DE32E00C42412 /* 03 */,
 				CE0FA2F2207B699700C268C0 /* 02 */,
 				CE3B74F11F43E7260004E1F3 /* Main.storyboard */,
 				CE3B74F41F43E7260004E1F3 /* Assets.xcassets */,
@@ -128,6 +131,14 @@
 				CEF10698207CA16400C42412 /* rabbit.png */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		CEF1069E207DE32E00C42412 /* 03 */ = {
+			isa = PBXGroup;
+			children = (
+				CEF1069F207E0FF800C42412 /* CIingView.swift */,
+			);
+			path = 03;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +254,7 @@
 				CE3B750E1F43F4BC0004E1F3 /* Singleton.swift in Sources */,
 				CE3B74EE1F43E7260004E1F3 /* AppDelegate.swift in Sources */,
 				CE3B751C1F55719C0004E1F3 /* AVViewController.swift in Sources */,
+				CEF106A0207E0FF800C42412 /* CIingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
