@@ -8,14 +8,34 @@
 
 import UIKit
 
+
+extension ViewController: FaceViewDataSource {
+    
+    func smilenessForFaceView(_ sender: SmilingView) -> CGFloat {
+        return CGFloat(result - 50) / 50
+    }
+    
+}
+
 class ViewController: UIViewController {
     
-    @IBOutlet var faceView: SmilingView!
+    @IBOutlet var faceView: SmilingView! {
+        didSet {
+            faceView.dataSource = self
+            faceView.addGestureRecognizer(UIPinchGestureRecognizer(target: self, action: #selector(pinchAction)))
+        }
+    }
+    
+    @objc
+    func pinchAction(_ sender: UIPinchGestureRecognizer) {
+        faceView.faceScale += sender.scale - 1
+        sender.scale = 1
+    }
     
     var result: Int = 0 {
         didSet {
-            result = min(max(result, 0), 0)
-            
+            result = min(max(result, 0), 100)
+            updateUI();
         }
     }
     
@@ -25,8 +45,13 @@ class ViewController: UIViewController {
         
         
     }
+    
+    func updateUI() {
+        faceView?.setNeedsDisplay()
+    }
 
     @IBAction func pan(_ sender: UIPanGestureRecognizer) {
+        
         switch sender.state {
         case .ended: fallthrough
         case .changed:

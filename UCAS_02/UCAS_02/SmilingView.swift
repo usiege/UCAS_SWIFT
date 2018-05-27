@@ -8,28 +8,44 @@
 
 import UIKit
 
-protocol DataSource: class {
+protocol DataSource {
     
+}
+
+//只允许类继承
+protocol ClassPrococol: class {
+    
+}
+
+
+protocol FaceViewDataSource: class {
+    func smilenessForFaceView( _ sender: SmilingView) -> CGFloat
 }
 
 class SmilingView: UIView {
     
-//    override var gestureRecognizers: [UIGestureRecognizer]?
+    weak var dataSource: FaceViewDataSource?
     
     var faceCenter: CGPoint {
         return self.convert(center, from: superview)
     }
     
     var faceRadius: CGFloat {
-        return min(bounds.size.width/2, bounds.size.height/2)
+        return min(bounds.size.width/2, bounds.size.height/2) * faceScale
     }
     
     @IBInspectable  //会在xib里出现属性
     var faceLineWidth: CGFloat = 3
     
+    @IBInspectable
     var faceColor: UIColor = UIColor.blue
     
-    var faceScale: CGFloat = 0.9
+    @IBInspectable
+    var faceScale: CGFloat = 0.9 {
+        didSet {
+            self.setNeedsDisplay()
+        }
+    }
 
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -45,7 +61,7 @@ class SmilingView: UIView {
         faceColor.set()
         facePath.stroke()
         
-        let smilenss: CGFloat = 1.0
+        let smilenss: CGFloat = self.dataSource?.smilenessForFaceView(self) ?? 1.0
         drawSmile(smilenss).stroke()
     }
 
@@ -64,7 +80,7 @@ class SmilingView: UIView {
         
         ctrPoint1.x += 0.3 * faceRadius
         ctrPoint1.y += 0.4 * faceRadius * smilenamesForFace
-        ctrPoint2.x += 0.3 * faceRadius
+        ctrPoint2.x -= 0.3 * faceRadius
         ctrPoint2.y += 0.4 * faceRadius * smilenamesForFace
         
         let smilePath = UIBezierPath()
@@ -80,6 +96,8 @@ class SmilingView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
+    
+    
 //    override init(frame: CGRect) {
 //        super.init(frame: frame)
 //    }
