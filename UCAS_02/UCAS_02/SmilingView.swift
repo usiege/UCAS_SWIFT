@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol DataSource: class {
+    
+}
+
 class SmilingView: UIView {
     
 //    override var gestureRecognizers: [UIGestureRecognizer]?

@@ -9,7 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet var faceView: SmilingView!
+    
+    var result: Int = 0 {
+        didSet {
+            result = min(max(result, 0), 0)
+            
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -17,6 +26,19 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func pan(_ sender: UIPanGestureRecognizer) {
+        switch sender.state {
+        case .ended: fallthrough
+        case .changed:
+            let translation = sender.translation(in: faceView)
+            let changes = Int(translation.y)
+            result += changes
+            sender.setTranslation(CGPoint.zero, in: faceView)
+        default:
+            break
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -24,4 +46,8 @@ class ViewController: UIViewController {
 
 
 }
+
+
+
+
 
