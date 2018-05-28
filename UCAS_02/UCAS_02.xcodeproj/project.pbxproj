@@ -12,7 +12,7 @@
 		627CB80820BA35B200D22923 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627CB80620BA35B200D22923 /* Main.storyboard */; };
 		627CB80A20BA35B200D22923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 627CB80920BA35B200D22923 /* Assets.xcassets */; };
 		627CB80D20BA35B200D22923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627CB80B20BA35B200D22923 /* LaunchScreen.storyboard */; };
-		627CB81520BA363300D22923 /* SmilingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627CB81420BA363300D22923 /* SmilingView.swift */; };
+		627CB81520BA363300D22923 /* SmileFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627CB81420BA363300D22923 /* SmileFaceView.swift */; };
 		627CB81720BA593100D22923 /* SegueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627CB81620BA593000D22923 /* SegueViewController.swift */; };
 		627CB83720BABEDD00D22923 /* FacePopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627CB83620BABEDD00D22923 /* FacePopViewController.swift */; };
 /* End PBXBuildFile section */
@@ -25,7 +25,7 @@
 		627CB80920BA35B200D22923 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		627CB80C20BA35B200D22923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		627CB80E20BA35B200D22923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		627CB81420BA363300D22923 /* SmilingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmilingView.swift; sourceTree = "<group>"; };
+		627CB81420BA363300D22923 /* SmileFaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileFaceView.swift; sourceTree = "<group>"; };
 		627CB81620BA593000D22923 /* SegueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueViewController.swift; sourceTree = "<group>"; };
 		627CB83620BABEDD00D22923 /* FacePopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacePopViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,10 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				627CB80220BA35B200D22923 /* AppDelegate.swift */,
+				627CB81620BA593000D22923 /* SegueViewController.swift */,
 				627CB80420BA35B200D22923 /* ViewController.swift */,
 				627CB83620BABEDD00D22923 /* FacePopViewController.swift */,
-				627CB81620BA593000D22923 /* SegueViewController.swift */,
-				627CB81420BA363300D22923 /* SmilingView.swift */,
+				627CB81420BA363300D22923 /* SmileFaceView.swift */,
 				627CB80620BA35B200D22923 /* Main.storyboard */,
 				627CB80920BA35B200D22923 /* Assets.xcassets */,
 				627CB80B20BA35B200D22923 /* LaunchScreen.storyboard */,
@@ -146,7 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				627CB81720BA593100D22923 /* SegueViewController.swift in Sources */,
-				627CB81520BA363300D22923 /* SmilingView.swift in Sources */,
+				627CB81520BA363300D22923 /* SmileFaceView.swift in Sources */,
 				627CB80520BA35B200D22923 /* ViewController.swift in Sources */,
 				627CB80320BA35B200D22923 /* AppDelegate.swift in Sources */,
 				627CB83720BABEDD00D22923 /* FacePopViewController.swift in Sources */,

@@ -19,10 +19,10 @@ protocol ClassPrococol: class {
 
 
 protocol FaceViewDataSource: class {
-    func smilenessForFaceView( _ sender: SmilingView) -> CGFloat
+    func smilenessForFaceView( _ sender: SmileFaceView) -> CGFloat
 }
 
-class SmilingView: UIView {
+class SmileFaceView: UIView {
     
     weak var dataSource: FaceViewDataSource?
     

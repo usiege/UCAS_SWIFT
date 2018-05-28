@@ -8,12 +8,6 @@
 
 import UIKit
 
-//extension FacePopViewController: UIPopoverPresentationControllerDelegate {
-//    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
-//        return UIModalPresentationStyle.custom
-//    }
-//}
-
 class FacePopViewController: ViewController {
     
     override func viewDidLoad() {

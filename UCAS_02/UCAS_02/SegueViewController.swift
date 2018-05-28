@@ -8,6 +8,18 @@
 
 import UIKit
 
+
+extension SegueViewController: UIPopoverPresentationControllerDelegate {
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return UIModalPresentationStyle.popover
+    }
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle {
+        return UIModalPresentationStyle.popover
+    }
+}
+
+
 class SegueViewController: UIViewController {
     
     @IBAction func prepare(_ sender: Any) {
@@ -42,7 +54,7 @@ class SegueViewController: UIViewController {
         }
         
         if let vc = destination as? ViewController {
-        
+//            vc.popoverPresentationController?.delegate = self
             if let identifer = segue.identifier {
                 vc.title = identifer
                 

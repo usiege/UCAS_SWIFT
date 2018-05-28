@@ -11,7 +11,7 @@ import UIKit
 
 extension ViewController: FaceViewDataSource {
     
-    func smilenessForFaceView(_ sender: SmilingView) -> CGFloat {
+    func smilenessForFaceView(_ sender: SmileFaceView) -> CGFloat {
         return CGFloat(result - 50) / 50
     }
     
@@ -19,7 +19,7 @@ extension ViewController: FaceViewDataSource {
 
 class ViewController: UIViewController {
     
-    @IBOutlet var faceView: SmilingView! {
+    @IBOutlet var faceView: SmileFaceView! {
         didSet {
             faceView.dataSource = self
             faceView.addGestureRecognizer(UIPinchGestureRecognizer(target: self, action: #selector(pinchAction)))
