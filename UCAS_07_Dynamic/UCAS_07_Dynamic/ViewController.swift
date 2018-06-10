@@ -46,11 +46,15 @@ class ViewController: UIViewController {
     }()
     
     var gravity = UIGravityBehavior()
+    
     lazy var collider: UICollisionBehavior = {
         let collider = UICollisionBehavior()
         collider.translatesReferenceBoundsIntoBoundary = true
+        
+        
         return collider
     }()
+    
     lazy var dropBehavior: UIDynamicItemBehavior = {
        let drop = UIDynamicItemBehavior()
         drop.allowsRotation = true
