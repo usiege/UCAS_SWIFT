@@ -42,7 +42,6 @@ extension ViewController: UIScrollViewDelegate {
 
 class ViewController: UIViewController {
     
-    
     @IBOutlet weak var scrollView: UIScrollView! {
         didSet {
             scrollView.contentSize = imageView.frame.size
@@ -95,8 +94,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.scrollView.addSubview(imageView)
-        
-        
+    
         
 //        let constrait = NSLayoutConstraint(item: self.view,
 //                                           attribute: .width,

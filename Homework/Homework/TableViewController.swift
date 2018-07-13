@@ -11,7 +11,7 @@ import UIKit
 class TableViewController: UITableViewController {
     
     //segue identifier
-    var homeworkItems = ["smallface","test"]
+    var homeworkItems = ["smallface", "netimage", "test"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -110,6 +110,7 @@ class TableViewController: UITableViewController {
         
         if let identifer = segue.identifier {
             destination.title = identifer
+            destination.view.backgroundColor = UIColor.randomColor()
             
             switch identifer {
             case homeworkItems[0]:
@@ -117,10 +118,6 @@ class TableViewController: UITableViewController {
                     vc.result = Int(arc4random() % 100)
                 }
             case homeworkItems[1]:
-                break
-            case homeworkItems[2]:
-                break
-            case homeworkItems[3]:
                 break
                 
             default:

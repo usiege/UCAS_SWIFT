@@ -16,6 +16,8 @@
 		62AA8A0420E8FA1000009DBE /* SmileFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA8A0320E8FA1000009DBE /* SmileFaceView.swift */; };
 		62AA8A0620E8FC3A00009DBE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA8A0520E8FC3A00009DBE /* TableViewCell.swift */; };
 		CE632A0120F89546006EE291 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE632A0020F89546006EE291 /* TestViewController.swift */; };
+		CE632A0320F8B5B0006EE291 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE632A0220F8B5B0006EE291 /* Extension.swift */; };
+		CE632A0820F8BB58006EE291 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE632A0720F8BB58006EE291 /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		62AA8A0320E8FA1000009DBE /* SmileFaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmileFaceView.swift; sourceTree = "<group>"; };
 		62AA8A0520E8FC3A00009DBE /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		CE632A0020F89546006EE291 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		CE632A0220F8B5B0006EE291 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		CE632A0720F8BB58006EE291 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				62AA89FF20E8F88000009DBE /* TableViewController.swift */,
 				62AA8A0520E8FC3A00009DBE /* TableViewCell.swift */,
 				CE632A0020F89546006EE291 /* TestViewController.swift */,
+				CE632A0220F8B5B0006EE291 /* Extension.swift */,
+				CE632A0620F8BB45006EE291 /* netimage */,
 				CE6329FF20F894F3006EE291 /* smallface */,
 				62AA89F120E8F7EB00009DBE /* Main.storyboard */,
 				62AA89F420E8F7EB00009DBE /* Assets.xcassets */,
@@ -82,6 +88,14 @@
 				62AA8A0320E8FA1000009DBE /* SmileFaceView.swift */,
 			);
 			name = smallface;
+			sourceTree = "<group>";
+		};
+		CE632A0620F8BB45006EE291 /* netimage */ = {
+			isa = PBXGroup;
+			children = (
+				CE632A0720F8BB58006EE291 /* ImageViewController.swift */,
+			);
+			name = netimage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,9 +172,11 @@
 			files = (
 				62AA8A0620E8FC3A00009DBE /* TableViewCell.swift in Sources */,
 				62AA8A0220E8F97E00009DBE /* FaceViewController.swift in Sources */,
+				CE632A0320F8B5B0006EE291 /* Extension.swift in Sources */,
 				62AA89EE20E8F7EB00009DBE /* AppDelegate.swift in Sources */,
 				62AA8A0420E8FA1000009DBE /* SmileFaceView.swift in Sources */,
 				CE632A0120F89546006EE291 /* TestViewController.swift in Sources */,
+				CE632A0820F8BB58006EE291 /* ImageViewController.swift in Sources */,
 				62AA8A0020E8F88000009DBE /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
