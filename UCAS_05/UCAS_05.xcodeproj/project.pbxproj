@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		623BA49920CCB56A0052613D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BA49820CCB56A0052613D /* TableViewController.swift */; };
+		623BA49920CCB56A0052613D /* ImageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BA49820CCB56A0052613D /* ImageTableViewController.swift */; };
 		623BA49B20CCB5E90052613D /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BA49A20CCB5E90052613D /* ImageTableViewCell.swift */; };
-		623BA49D20CCBA680052613D /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BA49C20CCBA680052613D /* ImageViewController.swift */; };
+		623BA49D20CCBA680052613D /* ImageSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BA49C20CCBA680052613D /* ImageSubViewController.swift */; };
 		623BA49F20CCBE6D0052613D /* AddCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BA49E20CCBE6D0052613D /* AddCellViewController.swift */; };
 		628ABB8520CCAE7A0075381D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628ABB8420CCAE7A0075381D /* AppDelegate.swift */; };
 		628ABB8A20CCAE7A0075381D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 628ABB8820CCAE7A0075381D /* Main.storyboard */; };
@@ -18,9 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		623BA49820CCB56A0052613D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		623BA49820CCB56A0052613D /* ImageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewController.swift; sourceTree = "<group>"; };
 		623BA49A20CCB5E90052613D /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
-		623BA49C20CCBA680052613D /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		623BA49C20CCBA680052613D /* ImageSubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSubViewController.swift; sourceTree = "<group>"; };
 		623BA49E20CCBE6D0052613D /* AddCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCellViewController.swift; sourceTree = "<group>"; };
 		628ABB8120CCAE7A0075381D /* UCAS_05.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UCAS_05.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		628ABB8420CCAE7A0075381D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,8 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				628ABB8420CCAE7A0075381D /* AppDelegate.swift */,
-				623BA49820CCB56A0052613D /* TableViewController.swift */,
-				623BA49C20CCBA680052613D /* ImageViewController.swift */,
+				623BA49820CCB56A0052613D /* ImageTableViewController.swift */,
+				623BA49C20CCBA680052613D /* ImageSubViewController.swift */,
 				623BA49E20CCBE6D0052613D /* AddCellViewController.swift */,
 				623BA49A20CCB5E90052613D /* ImageTableViewCell.swift */,
 				628ABB8820CCAE7A0075381D /* Main.storyboard */,
@@ -154,8 +154,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				623BA49B20CCB5E90052613D /* ImageTableViewCell.swift in Sources */,
-				623BA49920CCB56A0052613D /* TableViewController.swift in Sources */,
-				623BA49D20CCBA680052613D /* ImageViewController.swift in Sources */,
+				623BA49920CCB56A0052613D /* ImageTableViewController.swift in Sources */,
+				623BA49D20CCBA680052613D /* ImageSubViewController.swift in Sources */,
 				628ABB8520CCAE7A0075381D /* AppDelegate.swift in Sources */,
 				623BA49F20CCBE6D0052613D /* AddCellViewController.swift in Sources */,
 			);

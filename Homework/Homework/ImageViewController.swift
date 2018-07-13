@@ -81,7 +81,10 @@ class ImageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "双指操作可进行缩放"
         self.scrollView.addSubview(imageView)
+        self.scrollView.minimumZoomScale = 0.2
+        self.scrollView.maximumZoomScale = 2.0
         self.imageURL = urls[0]
         
         

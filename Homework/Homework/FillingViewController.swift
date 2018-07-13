@@ -1,14 +1,14 @@
 //
-//  ImageViewController.swift
-//  UCAS_05
+//  FillingViewController.swift
+//  Homework
 //
-//  Created by charles on 2018/6/10.
+//  Created by user on 2018/7/13.
 //  Copyright © 2018年 lizhonghuan. All rights reserved.
 //
 
 import UIKit
 
-class ImageViewController: UIViewController {
+class FillingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

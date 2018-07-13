@@ -18,6 +18,14 @@
 		CE632A0120F89546006EE291 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE632A0020F89546006EE291 /* TestViewController.swift */; };
 		CE632A0320F8B5B0006EE291 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE632A0220F8B5B0006EE291 /* Extension.swift */; };
 		CE632A0820F8BB58006EE291 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE632A0720F8BB58006EE291 /* ImageViewController.swift */; };
+		CE632A0D20F8D05E006EE291 /* FillingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE632A0B20F8D05E006EE291 /* FillingView.swift */; };
+		CE632A1120F8D0AA006EE291 /* FillingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE632A1020F8D0AA006EE291 /* FillingViewController.swift */; };
+		CE632A1320F8D226006EE291 /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = CE632A1220F8D226006EE291 /* dog.png */; };
+		CE632A1620F8D293006EE291 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = CE632A1420F8D292006EE291 /* cat.png */; };
+		CE632A1720F8D293006EE291 /* rabbit.png in Resources */ = {isa = PBXBuildFile; fileRef = CE632A1520F8D293006EE291 /* rabbit.png */; };
+		CE632A1E20F8D76C006EE291 /* ImageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE632A1A20F8D76B006EE291 /* ImageTableViewController.swift */; };
+		CE632A1F20F8D76C006EE291 /* ImageSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE632A1B20F8D76C006EE291 /* ImageSubViewController.swift */; };
+		CE632A2020F8D76C006EE291 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE632A1C20F8D76C006EE291 /* ImageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +42,14 @@
 		CE632A0020F89546006EE291 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		CE632A0220F8B5B0006EE291 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		CE632A0720F8BB58006EE291 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		CE632A0B20F8D05E006EE291 /* FillingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FillingView.swift; sourceTree = "<group>"; };
+		CE632A1020F8D0AA006EE291 /* FillingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillingViewController.swift; sourceTree = "<group>"; };
+		CE632A1220F8D226006EE291 /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dog.png; path = ../../DHLibrary/Resource/dog.png; sourceTree = "<group>"; };
+		CE632A1420F8D292006EE291 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cat.png; path = ../../DHLibrary/Resource/cat.png; sourceTree = "<group>"; };
+		CE632A1520F8D293006EE291 /* rabbit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rabbit.png; path = ../../DHLibrary/Resource/rabbit.png; sourceTree = "<group>"; };
+		CE632A1A20F8D76B006EE291 /* ImageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewController.swift; sourceTree = "<group>"; };
+		CE632A1B20F8D76C006EE291 /* ImageSubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSubViewController.swift; sourceTree = "<group>"; };
+		CE632A1C20F8D76C006EE291 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,12 +87,17 @@
 				62AA8A0520E8FC3A00009DBE /* TableViewCell.swift */,
 				CE632A0020F89546006EE291 /* TestViewController.swift */,
 				CE632A0220F8B5B0006EE291 /* Extension.swift */,
+				CE632A1820F8D5B0006EE291 /* imagetable */,
+				CE632A0920F8D03E006EE291 /* filling */,
 				CE632A0620F8BB45006EE291 /* netimage */,
 				CE6329FF20F894F3006EE291 /* smallface */,
 				62AA89F120E8F7EB00009DBE /* Main.storyboard */,
 				62AA89F420E8F7EB00009DBE /* Assets.xcassets */,
 				62AA89F620E8F7EB00009DBE /* LaunchScreen.storyboard */,
 				62AA89F920E8F7EB00009DBE /* Info.plist */,
+				CE632A1220F8D226006EE291 /* dog.png */,
+				CE632A1420F8D292006EE291 /* cat.png */,
+				CE632A1520F8D293006EE291 /* rabbit.png */,
 			);
 			path = Homework;
 			sourceTree = "<group>";
@@ -96,6 +117,25 @@
 				CE632A0720F8BB58006EE291 /* ImageViewController.swift */,
 			);
 			name = netimage;
+			sourceTree = "<group>";
+		};
+		CE632A0920F8D03E006EE291 /* filling */ = {
+			isa = PBXGroup;
+			children = (
+				CE632A1020F8D0AA006EE291 /* FillingViewController.swift */,
+				CE632A0B20F8D05E006EE291 /* FillingView.swift */,
+			);
+			name = filling;
+			sourceTree = "<group>";
+		};
+		CE632A1820F8D5B0006EE291 /* imagetable */ = {
+			isa = PBXGroup;
+			children = (
+				CE632A1B20F8D76C006EE291 /* ImageSubViewController.swift */,
+				CE632A1C20F8D76C006EE291 /* ImageTableViewCell.swift */,
+				CE632A1A20F8D76B006EE291 /* ImageTableViewController.swift */,
+			);
+			name = imagetable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,9 +197,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE632A1620F8D293006EE291 /* cat.png in Resources */,
+				CE632A1320F8D226006EE291 /* dog.png in Resources */,
 				62AA89F820E8F7EB00009DBE /* LaunchScreen.storyboard in Resources */,
 				62AA89F520E8F7EB00009DBE /* Assets.xcassets in Resources */,
 				62AA89F320E8F7EB00009DBE /* Main.storyboard in Resources */,
+				CE632A1720F8D293006EE291 /* rabbit.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,11 +215,16 @@
 			files = (
 				62AA8A0620E8FC3A00009DBE /* TableViewCell.swift in Sources */,
 				62AA8A0220E8F97E00009DBE /* FaceViewController.swift in Sources */,
+				CE632A1120F8D0AA006EE291 /* FillingViewController.swift in Sources */,
 				CE632A0320F8B5B0006EE291 /* Extension.swift in Sources */,
 				62AA89EE20E8F7EB00009DBE /* AppDelegate.swift in Sources */,
 				62AA8A0420E8FA1000009DBE /* SmileFaceView.swift in Sources */,
+				CE632A2020F8D76C006EE291 /* ImageTableViewCell.swift in Sources */,
+				CE632A1E20F8D76C006EE291 /* ImageTableViewController.swift in Sources */,
+				CE632A0D20F8D05E006EE291 /* FillingView.swift in Sources */,
 				CE632A0120F89546006EE291 /* TestViewController.swift in Sources */,
 				CE632A0820F8BB58006EE291 /* ImageViewController.swift in Sources */,
+				CE632A1F20F8D76C006EE291 /* ImageSubViewController.swift in Sources */,
 				62AA8A0020E8F88000009DBE /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,7 +365,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 472P9J8R6U;
 				INFOPLIST_FILE = Homework/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ucas.2017Z8009061078.Homework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -333,7 +381,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 472P9J8R6U;
 				INFOPLIST_FILE = Homework/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ucas.2017Z8009061078.Homework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
