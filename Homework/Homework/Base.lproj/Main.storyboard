@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -247,6 +248,7 @@
                                             <rect key="frame" x="26" y="11" width="171" height="98"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="171" id="eRK-Pd-Ds9"/>
+                                                <constraint firstAttribute="width" secondItem="YDj-IJ-ExE" secondAttribute="height" multiplier="171:98" id="lAz-6V-kWg"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRI-0Q-eCo">
@@ -267,12 +269,12 @@
                                         <constraint firstItem="gRI-0Q-eCo" firstAttribute="leading" secondItem="YDj-IJ-ExE" secondAttribute="trailing" constant="77" id="Bua-n7-wpw"/>
                                         <constraint firstItem="YDj-IJ-ExE" firstAttribute="top" secondItem="AaW-wL-z07" secondAttribute="top" constant="11" id="Di8-lG-1QV"/>
                                         <constraint firstItem="fs8-Zb-yxl" firstAttribute="leading" secondItem="YDj-IJ-ExE" secondAttribute="trailing" constant="77" id="LET-g8-4SR"/>
+                                        <constraint firstItem="gRI-0Q-eCo" firstAttribute="width" secondItem="fs8-Zb-yxl" secondAttribute="width" id="N6r-Ja-KdN"/>
                                         <constraint firstAttribute="bottom" secondItem="YDj-IJ-ExE" secondAttribute="bottom" constant="26.5" id="PJd-ma-ezT"/>
                                         <constraint firstAttribute="trailing" secondItem="fs8-Zb-yxl" secondAttribute="trailing" constant="24" id="XzB-WC-8Dd"/>
                                         <constraint firstAttribute="bottom" secondItem="gRI-0Q-eCo" secondAttribute="bottom" constant="33.5" id="hLW-gg-8eM"/>
                                         <constraint firstItem="YDj-IJ-ExE" firstAttribute="leading" secondItem="AaW-wL-z07" secondAttribute="leading" constant="26" id="jj0-S5-X3T"/>
                                         <constraint firstItem="fs8-Zb-yxl" firstAttribute="top" secondItem="AaW-wL-z07" secondAttribute="top" constant="20" id="tWe-RW-cHz"/>
-                                        <constraint firstItem="gRI-0Q-eCo" firstAttribute="width" secondItem="fs8-Zb-yxl" secondAttribute="width" id="zqx-8J-N10"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

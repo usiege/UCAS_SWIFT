@@ -48,7 +48,8 @@ class ImageTableViewController: UITableViewController {
     
     
     @IBAction func add(_ sender: UIBarButtonItem) {
-        
+        let imagecell = dataSource![Int(arc4random() % 3)]
+        self.addCellToTableView(data: imagecell, at: (dataSource?.count)!)
     }
     
 
