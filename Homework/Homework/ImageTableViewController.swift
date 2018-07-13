@@ -32,6 +32,7 @@ class ImageTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "点击 cancel 退出"
         
         dataSource =
             [ImageCell(name: "join", info: "boy", url: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528031543880&di=1cbfd3f8c7a989e7f5d67911a7a3164a&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2Fc%2F581ff4b6a1149.jpg", filtered: false),
@@ -52,7 +53,7 @@ class ImageTableViewController: UITableViewController {
     
 
     @IBAction func cancel(_ sender: UIBarButtonItem) {
-        
+        self.navigationController?.popViewController(animated: true)
     }
     
     
