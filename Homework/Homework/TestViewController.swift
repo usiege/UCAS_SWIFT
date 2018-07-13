@@ -10,6 +10,8 @@ import UIKit
 
 class TestViewController: UIViewController {
 
+    var pagename: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

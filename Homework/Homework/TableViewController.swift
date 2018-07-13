@@ -10,7 +10,8 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    var homeworkItems = ["smallface", "2", "3", "4","test"]
+    //segue identifier
+    var homeworkItems = ["smallface","test"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,13 +56,7 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch indexPath.row {
-        case 0:
-            self.performSegue(withIdentifier: "smallface", sender: self)
-            
-        default:
-            break;
-        }
+        self.performSegue(withIdentifier: homeworkItems[indexPath.row], sender: self)
     }
  
 
@@ -113,23 +108,24 @@ class TableViewController: UITableViewController {
             destination = nvc.visibleViewController ?? destination
         }
         
-        if let vc = destination as? FaceViewController {
-//            vc.popoverPresentationController?.delegate = self
-            if let identifer = segue.identifier {
-                vc.title = identifer
+        if let identifer = segue.identifier {
+            destination.title = identifer
+            
+            switch identifer {
+            case homeworkItems[0]:
+                if let vc = destination as? FaceViewController {
+                    vc.result = Int(arc4random() % 100)
+                }
+            case homeworkItems[1]:
+                break
+            case homeworkItems[2]:
+                break
+            case homeworkItems[3]:
+                break
                 
-                switch identifer {
-                case homeworkItems[0]:
-                    vc.result = 50
-                case homeworkItems[1]:
-                    break
-                case homeworkItems[2]:
-                    break
-                case homeworkItems[3]:
-                    break
-                
-                default:
-                    break
+            default:
+                if let vc = destination as? TestViewController {
+                    vc.pagename = "我是测试页面！"
                 }
             }
         }
