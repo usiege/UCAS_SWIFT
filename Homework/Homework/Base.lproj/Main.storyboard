@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dUG-aH-oMU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dUG-aH-oMU">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -52,12 +51,27 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="Lgo-nb-XSl"/>
                     <connections>
-                        <segue destination="7CW-eu-P0u" kind="push" identifier="smallface" id="eLH-Ob-TwQ"/>
+                        <segue destination="7CW-eu-P0u" kind="show" identifier="smallface" id="eLH-Ob-TwQ"/>
+                        <segue destination="ewJ-U3-zfk" kind="show" identifier="test" id="oJT-7a-vtf"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yOg-2o-ywD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-90" y="-344"/>
+        </scene>
+        <!--Test View Controller-->
+        <scene sceneID="C0H-f0-1Ps">
+            <objects>
+                <viewController id="ewJ-U3-zfk" customClass="TestViewController" customModule="Homework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s9T-51-qhy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RJe-cH-Dio" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="662" y="96"/>
         </scene>
         <!--Face View Controller-->
         <scene sceneID="bFG-We-uNA">
@@ -68,7 +82,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUU-Y8-dKM" customClass="SmileFaceView" customModule="Homework" customModuleProvider="target">
-                                <rect key="frame" x="76" y="260" width="223" height="211"/>
+                                <rect key="frame" x="76" y="228" width="223" height="211"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -83,10 +97,9 @@
                         <color key="backgroundColor" red="0.99075255102040816" green="0.89057185374149661" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="BUU-Y8-dKM" firstAttribute="centerX" secondItem="hJI-zv-tKU" secondAttribute="centerX" id="EzL-M5-g3Z"/>
-                            <constraint firstItem="BUU-Y8-dKM" firstAttribute="centerY" secondItem="hJI-zv-tKU" secondAttribute="centerY" id="lsu-Cu-Ihs"/>
+                            <constraint firstItem="BUU-Y8-dKM" firstAttribute="centerX" secondItem="saz-Qa-u01" secondAttribute="centerX" id="EzL-M5-g3Z"/>
+                            <constraint firstItem="BUU-Y8-dKM" firstAttribute="centerY" secondItem="saz-Qa-u01" secondAttribute="centerY" id="lsu-Cu-Ihs"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="hJI-zv-tKU"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="faceLineWidth">
                                 <real key="value" value="3"/>

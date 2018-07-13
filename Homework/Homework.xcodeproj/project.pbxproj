@@ -15,6 +15,7 @@
 		62AA8A0220E8F97E00009DBE /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA8A0120E8F97E00009DBE /* FaceViewController.swift */; };
 		62AA8A0420E8FA1000009DBE /* SmileFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA8A0320E8FA1000009DBE /* SmileFaceView.swift */; };
 		62AA8A0620E8FC3A00009DBE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA8A0520E8FC3A00009DBE /* TableViewCell.swift */; };
+		CE632A0120F89546006EE291 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE632A0020F89546006EE291 /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		62AA8A0120E8F97E00009DBE /* FaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
 		62AA8A0320E8FA1000009DBE /* SmileFaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmileFaceView.swift; sourceTree = "<group>"; };
 		62AA8A0520E8FC3A00009DBE /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		CE632A0020F89546006EE291 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,14 +65,23 @@
 				62AA89ED20E8F7EB00009DBE /* AppDelegate.swift */,
 				62AA89FF20E8F88000009DBE /* TableViewController.swift */,
 				62AA8A0520E8FC3A00009DBE /* TableViewCell.swift */,
-				62AA8A0120E8F97E00009DBE /* FaceViewController.swift */,
-				62AA8A0320E8FA1000009DBE /* SmileFaceView.swift */,
+				CE632A0020F89546006EE291 /* TestViewController.swift */,
+				CE6329FF20F894F3006EE291 /* smallface */,
 				62AA89F120E8F7EB00009DBE /* Main.storyboard */,
 				62AA89F420E8F7EB00009DBE /* Assets.xcassets */,
 				62AA89F620E8F7EB00009DBE /* LaunchScreen.storyboard */,
 				62AA89F920E8F7EB00009DBE /* Info.plist */,
 			);
 			path = Homework;
+			sourceTree = "<group>";
+		};
+		CE6329FF20F894F3006EE291 /* smallface */ = {
+			isa = PBXGroup;
+			children = (
+				62AA8A0120E8F97E00009DBE /* FaceViewController.swift */,
+				62AA8A0320E8FA1000009DBE /* SmileFaceView.swift */,
+			);
+			name = smallface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +160,7 @@
 				62AA8A0220E8F97E00009DBE /* FaceViewController.swift in Sources */,
 				62AA89EE20E8F7EB00009DBE /* AppDelegate.swift in Sources */,
 				62AA8A0420E8FA1000009DBE /* SmileFaceView.swift in Sources */,
+				CE632A0120F89546006EE291 /* TestViewController.swift in Sources */,
 				62AA8A0020E8F88000009DBE /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +299,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 472P9J8R6U;
 				INFOPLIST_FILE = Homework/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ucas.2017Z8009061078.Homework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -301,7 +315,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 472P9J8R6U;
 				INFOPLIST_FILE = Homework/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ucas.2017Z8009061078.Homework;
 				PRODUCT_NAME = "$(TARGET_NAME)";

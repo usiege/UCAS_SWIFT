@@ -10,7 +10,7 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    var homeworkItems = ["smallface", "2", "3", "4"]
+    var homeworkItems = ["smallface", "2", "3", "4","test"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +23,10 @@ class TableViewController: UITableViewController {
         
         self.tableView.register(TableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
         
+        
     }
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -117,12 +119,17 @@ class TableViewController: UITableViewController {
                 vc.title = identifer
                 
                 switch identifer {
-                case "smallface":
+                case homeworkItems[0]:
                     vc.result = 50
+                case homeworkItems[1]:
+                    break
+                case homeworkItems[2]:
+                    break
+                case homeworkItems[3]:
+                    break
                 
-                    
                 default:
-                    break;
+                    break
                 }
             }
         }
