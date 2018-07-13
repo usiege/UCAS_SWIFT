@@ -18,7 +18,6 @@ struct ImageCell {
 
 class ImageTableViewCell: UITableViewCell {
 
-
     @IBOutlet weak var cellImage: UIImageView!
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!

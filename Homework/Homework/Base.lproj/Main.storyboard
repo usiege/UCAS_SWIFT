@@ -315,30 +315,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NiZ-G6-oZ3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NiZ-G6-oZ3">
                                 <rect key="frame" x="74" y="171" width="976" height="627"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="g6V-C1-w2t" appends="YES" id="kgV-C0-UqD"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击图片退出" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRe-mO-1IK">
-                                <rect key="frame" x="74" y="55" width="976" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="74" y="55" width="976" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="WtX-nT-UU3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="NiZ-G6-oZ3" firstAttribute="top" secondItem="lRe-mO-1IK" secondAttribute="bottom" constant="54" id="C02-ma-Rzr"/>
+                            <constraint firstItem="lRe-mO-1IK" firstAttribute="trailing" secondItem="NiZ-G6-oZ3" secondAttribute="trailing" id="D2A-LF-jgt"/>
                             <constraint firstItem="NiZ-G6-oZ3" firstAttribute="leading" secondItem="SdS-P0-3su" secondAttribute="leading" constant="74" id="FMh-QB-ZJb"/>
                             <constraint firstItem="SdS-P0-3su" firstAttribute="bottom" secondItem="NiZ-G6-oZ3" secondAttribute="bottom" constant="36" id="Fah-04-2gK"/>
-                            <constraint firstItem="lRe-mO-1IK" firstAttribute="leading" secondItem="SdS-P0-3su" secondAttribute="leading" constant="74" id="aEM-ZV-2oe"/>
-                            <constraint firstItem="lRe-mO-1IK" firstAttribute="top" secondItem="SdS-P0-3su" secondAttribute="top" constant="35" id="jbz-Cj-de2"/>
-                            <constraint firstItem="SdS-P0-3su" firstAttribute="trailing" secondItem="lRe-mO-1IK" secondAttribute="trailing" constant="62" id="stZ-aX-G6H"/>
+                            <constraint firstItem="lRe-mO-1IK" firstAttribute="top" secondItem="SdS-P0-3su" secondAttribute="top" constant="35" id="OcZ-CT-gl1"/>
+                            <constraint firstItem="NiZ-G6-oZ3" firstAttribute="top" secondItem="lRe-mO-1IK" secondAttribute="bottom" constant="48" id="crE-Wa-iA2"/>
                             <constraint firstItem="SdS-P0-3su" firstAttribute="trailing" secondItem="NiZ-G6-oZ3" secondAttribute="trailing" constant="62" id="vaV-5e-dgn"/>
+                            <constraint firstItem="lRe-mO-1IK" firstAttribute="leading" secondItem="NiZ-G6-oZ3" secondAttribute="leading" id="wgP-Vl-SXy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SdS-P0-3su"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="NiZ-G6-oZ3" id="4Nz-9I-n8Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0V-9j-Eh3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="g6V-C1-w2t">
+                    <connections>
+                        <action selector="tapEvent:" destination="wVy-KR-PaG" id="72N-WD-LP4"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-1770.3237410071943" y="745.32374100719426"/>
         </scene>

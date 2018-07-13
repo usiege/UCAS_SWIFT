@@ -18,6 +18,7 @@ extension ImageTableViewController: UITextFieldDelegate {
 
 class ImageTableViewController: UITableViewController {
 
+    var selectedIndexRow: Int! = 0
     var dataSource: [ImageCell]?
     
     var searchText = "" {
@@ -92,6 +93,7 @@ class ImageTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selectedIndexRow = indexPath.row
         self.performSegue(withIdentifier: "imagedetial", sender: self)
     }
     
@@ -128,6 +130,7 @@ class ImageTableViewController: UITableViewController {
         
         if let ivc = segue.destination as? ImageSubViewController {
             ivc.title = "Image detial"
+            ivc.imageURI = self.dataSource![selectedIndexRow].url
         }
     }
     
