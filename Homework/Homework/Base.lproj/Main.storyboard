@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dUG-aH-oMU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dUG-aH-oMU">
     <device id="ipad10_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -58,6 +58,7 @@
                         <segue destination="vTE-tp-jIi" kind="show" identifier="netimage" id="AWf-xW-eB9"/>
                         <segue destination="sfO-I9-Mol" kind="show" identifier="filling" id="8lr-pd-USH"/>
                         <segue destination="jjp-oI-0qr" kind="show" identifier="imagetable" id="tjd-Dm-L3P"/>
+                        <segue destination="xoV-Bv-a2m" kind="show" identifier="animation" id="D52-Kf-riK"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yOg-2o-ywD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -113,7 +114,7 @@
                                     <outletCollection property="gestureRecognizers" destination="NIA-iH-kms" appends="YES" id="nb5-0h-DhO"/>
                                 </connections>
                             </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在进行网络请求......" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vof-VF-J8m">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在进行网络请求......" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vof-VF-J8m">
                                 <rect key="frame" x="0.0" y="324" width="1112" height="186"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -179,7 +180,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上下拖动可改变笑容，双指捏合可进行缩放" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHv-zs-Vaf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上下拖动可改变笑容，双指捏合可进行缩放" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHv-zs-Vaf">
                                 <rect key="frame" x="69" y="122" width="999" height="70"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <nil key="textColor"/>
@@ -231,13 +232,13 @@
         <!--Image Table View Controller-->
         <scene sceneID="5Nd-r7-thc">
             <objects>
-                <tableViewController id="jjp-oI-0qr" customClass="ImageTableViewController" customModule="UCAS_05" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="jjp-oI-0qr" customClass="ImageTableViewController" customModule="Homework" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="pCx-yH-aJA">
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" rowHeight="136" id="N9T-v1-EPB" customClass="ImageTableViewCell" customModule="UCAS_05" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" rowHeight="136" id="N9T-v1-EPB" customClass="ImageTableViewCell" customModule="Homework" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="1112" height="136"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N9T-v1-EPB" id="AaW-wL-z07">
@@ -307,12 +308,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t0w-od-pYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1885" y="-237"/>
+            <point key="canvasLocation" x="-2242" y="-230"/>
         </scene>
         <!--Image Sub View Controller-->
         <scene sceneID="9OG-53-hZ0">
             <objects>
-                <viewController id="wVy-KR-PaG" customClass="ImageSubViewController" customModule="UCAS_05" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wVy-KR-PaG" customClass="ImageSubViewController" customModule="Homework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X8m-XI-YRV">
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -357,7 +358,62 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1770.3237410071943" y="745.32374100719426"/>
+            <point key="canvasLocation" x="-2386" y="581"/>
+        </scene>
+        <!--Animation View Controller-->
+        <scene sceneID="Fs5-QJ-v5c">
+            <objects>
+                <viewController id="xoV-Bv-a2m" customClass="AnimationViewController" customModule="UCAS_07_Dynamic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rA9-f0-9Dn">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0T-QX-sdm">
+                                <rect key="frame" x="0.0" y="64" width="1112" height="770"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击屏幕有惊喜哦" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9li-Xx-SjD">
+                                        <rect key="frame" x="0.0" y="296" width="1104" height="124"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="124" id="Ugc-6t-E6U"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="9li-Xx-SjD" firstAttribute="width" secondItem="Y0T-QX-sdm" secondAttribute="width" constant="-8" id="XAr-7L-iSu"/>
+                                    <constraint firstItem="9li-Xx-SjD" firstAttribute="centerX" secondItem="Y0T-QX-sdm" secondAttribute="centerX" constant="-4" id="nDw-Vs-PAQ"/>
+                                    <constraint firstItem="9li-Xx-SjD" firstAttribute="centerY" secondItem="Y0T-QX-sdm" secondAttribute="centerY" constant="-27" id="uFy-oJ-uVq"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="B8Z-qI-WpM" appends="YES" id="FMS-9t-O2n"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Y0T-QX-sdm" firstAttribute="leading" secondItem="6VC-Wg-37E" secondAttribute="leading" id="4xU-IY-3w6"/>
+                            <constraint firstItem="Y0T-QX-sdm" firstAttribute="trailing" secondItem="6VC-Wg-37E" secondAttribute="trailing" id="5Rm-nf-3tp"/>
+                            <constraint firstItem="Y0T-QX-sdm" firstAttribute="bottom" secondItem="6VC-Wg-37E" secondAttribute="bottom" id="NvL-gQ-G67"/>
+                            <constraint firstItem="Y0T-QX-sdm" firstAttribute="top" secondItem="6VC-Wg-37E" secondAttribute="top" id="YbC-DT-qtX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6VC-Wg-37E"/>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="Y0T-QX-sdm" id="MwI-sa-GJZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QXF-3v-uuq" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="B8Z-qI-WpM">
+                    <connections>
+                        <action selector="tapAction:" destination="xoV-Bv-a2m" id="MJP-Ad-kqb"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-569.24460431654677" y="-230.21582733812951"/>
         </scene>
     </scenes>
 </document>

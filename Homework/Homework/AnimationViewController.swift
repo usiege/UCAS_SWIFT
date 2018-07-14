@@ -8,13 +8,13 @@
 
 import UIKit
 
-extension ViewController: UIDynamicAnimatorDelegate {
+extension AnimationViewController: UIDynamicAnimatorDelegate {
     func dynamicAnimatorDidPause(_ animator: UIDynamicAnimator) {
         
     }
 }
 
-class ViewController: UIViewController {
+class AnimationViewController: UIViewController {
     
     @IBAction func tapAction(_ sender: Any) {
         drop()
@@ -91,7 +91,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         animator.addBehavior(gravity)
-        
+        animator.addBehavior(collider)
+
     }
 
     override func didReceiveMemoryWarning() {

@@ -11,7 +11,7 @@ import UIKit
 class TableViewController: UITableViewController {
     
     //segue identifier
-    var homeworkItems = ["smallface", "netimage", "filling", "imagetable", "test"]
+    var homeworkItems = ["smallface", "netimage", "filling", "imagetable", "animation", "test"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
