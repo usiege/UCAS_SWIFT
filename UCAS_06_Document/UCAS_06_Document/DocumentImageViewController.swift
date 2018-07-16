@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension ImageViewController: UIDropInteractionDelegate {
+extension DocumentImageViewController: UIDropInteractionDelegate {
     
     func dropInteraction(_ interaction: UIDropInteraction, canHandle session: UIDropSession) -> Bool {
         return session.canLoadObjects(ofClass: UIImage.self) && session.canLoadObjects(ofClass: NSURL.self)
@@ -55,7 +55,7 @@ extension ImageViewController: UIDropInteractionDelegate {
     }
 }
 
-class ImageViewController: UIViewController {
+class DocumentImageViewController: UIViewController {
 
     var data: ImageJson?
     var imageDocument: Document?

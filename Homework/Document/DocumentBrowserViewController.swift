@@ -1,8 +1,8 @@
 //
 //  DocumentBrowserViewController.swift
-//  UCAS_06_Document
+//  Document
 //
-//  Created by charles on 2018/6/10.
+//  Created by charles on 2018/7/15.
 //  Copyright © 2018年 lizhonghuan. All rights reserved.
 //
 
@@ -10,8 +10,6 @@ import UIKit
 
 
 class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocumentBrowserViewControllerDelegate {
-    
-    var urlTemplate: URL?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,22 +19,28 @@ class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocument
         allowsDocumentCreation = true
         allowsPickingMultipleItems = false
         
-        urlTemplate = try? FileManager.default.url(for: .applicationDirectory,
-                                                   in: .userDomainMask,
-                                                   appropriateFor: nil,
-                                                   create: true).appendingPathComponent("image.json")
-        if urlTemplate != nil {
-            
-        }
-    
+        // Update the style of the UIDocumentBrowserViewController
+        // browserUserInterfaceStyle = .dark
+        // view.tintColor = .white
+        
+        // Specify the allowed content types of your application via the Info.plist.
+        
+        // Do any additional setup after loading the view, typically from a nib.
     }
     
     
     // MARK: UIDocumentBrowserViewControllerDelegate
     
     func documentBrowser(_ controller: UIDocumentBrowserViewController, didRequestDocumentCreationWithHandler importHandler: @escaping (URL?, UIDocumentBrowserViewController.ImportMode) -> Void) {
+        let newDocumentURL: URL? = nil
         
-       importHandler(urlTemplate, UIDocumentBrowserViewController.ImportMode.none)
+        // Set the URL for the new document here. Optionally, you can present a template chooser before calling the importHandler.
+        // Make sure the importHandler is always called, even if the user cancels the creation request.
+        if newDocumentURL != nil {
+            importHandler(newDocumentURL, .move)
+        } else {
+            importHandler(nil, .none)
+        }
     }
     
     func documentBrowser(_ controller: UIDocumentBrowserViewController, didPickDocumentURLs documentURLs: [URL]) {

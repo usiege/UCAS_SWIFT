@@ -15,7 +15,7 @@
 		623BA4B820CCC8D00052613D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 623BA4B720CCC8D00052613D /* Assets.xcassets */; };
 		623BA4BB20CCC8D00052613D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 623BA4B920CCC8D00052613D /* LaunchScreen.storyboard */; };
 		623BA4C320CCCA310052613D /* ImageJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BA4C220CCCA310052613D /* ImageJSON.swift */; };
-		623BA4C520CCCA910052613D /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BA4C420CCCA910052613D /* ImageViewController.swift */; };
+		623BA4C520CCCA910052613D /* DocumentImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623BA4C420CCCA910052613D /* DocumentImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		623BA4BA20CCC8D00052613D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		623BA4BC20CCC8D10052613D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		623BA4C220CCCA310052613D /* ImageJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageJSON.swift; sourceTree = "<group>"; };
-		623BA4C420CCCA910052613D /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		623BA4C420CCCA910052613D /* DocumentImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +64,10 @@
 			children = (
 				623BA4AC20CCC8D00052613D /* AppDelegate.swift */,
 				623BA4AE20CCC8D00052613D /* DocumentBrowserViewController.swift */,
-				623BA4C220CCCA310052613D /* ImageJSON.swift */,
-				623BA4C420CCCA910052613D /* ImageViewController.swift */,
 				623BA4B020CCC8D00052613D /* DocumentViewController.swift */,
 				623BA4B220CCC8D00052613D /* Document.swift */,
+				623BA4C220CCCA310052613D /* ImageJSON.swift */,
+				623BA4C420CCCA910052613D /* DocumentImageViewController.swift */,
 				623BA4B420CCC8D00052613D /* Main.storyboard */,
 				623BA4B720CCC8D00052613D /* Assets.xcassets */,
 				623BA4B920CCC8D00052613D /* LaunchScreen.storyboard */,
@@ -152,7 +152,7 @@
 				623BA4B320CCC8D00052613D /* Document.swift in Sources */,
 				623BA4B120CCC8D00052613D /* DocumentViewController.swift in Sources */,
 				623BA4AF20CCC8D00052613D /* DocumentBrowserViewController.swift in Sources */,
-				623BA4C520CCCA910052613D /* ImageViewController.swift in Sources */,
+				623BA4C520CCCA910052613D /* DocumentImageViewController.swift in Sources */,
 				623BA4AD20CCC8D00052613D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
